@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html>
+<htm ng-app="blocLiveChat">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
+    <title>Bloc Live Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
+    <ui-view></ui-view>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCxZHfS6wMx7z1mb2dki1RqUu7s1LIFeVo",
+        authDomain: "bloc-live-chat.firebaseapp.com",
+        databaseURL: "https://bloc-live-chat.firebaseio.com",
+        projectId: "bloc-live-chat",
+        storageBucket: "bloc-live-chat.appspot.com",
+        messagingSenderId: "1067756910177"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="/scripts/app.js"></script>
 </body>
 </html>

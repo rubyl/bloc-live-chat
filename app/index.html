@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htm ng-app="blocLiveChat">
+<html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Live Chat</title>
@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
+    <nav class="sidebar">
+        <h3 ng-repeat="room in room.room">Hello</h3>
+    </nav>
+    
     <ui-view></ui-view>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
@@ -26,5 +30,7 @@
       firebase.initializeApp(config);
     </script>
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/factories/Room.js"></script>
+    <script src="/scripts/controllers/RoomCtrl.js"></script>
 </body>
 </html>

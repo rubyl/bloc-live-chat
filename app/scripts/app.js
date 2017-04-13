@@ -9,8 +9,8 @@
          $stateProvider
             .state('rooms', {
             url: '/',
-            controller: 'RoomCtrl as room',
-            templateUrl: '/templates/room.html'
+            controller: 'RoomCtrl as rooms',
+            templateUrl: '/templates/rooms.html'
          });
 
      }

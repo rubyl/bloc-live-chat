@@ -1,5 +1,11 @@
 <section class="chat-rooms container">
+    <div class="chat-room-list">
+        <div class="heading" ng-controller="ModalCtrl as modal">
+            <h1>Bloc Chat</h1>
+            <button type="button" class="new-room" ng-click="modal.open()">New Room</button>
+        </div>    
         <div class="rooms" ng-repeat="roomName in rooms.roomData">
-            <h4>{{ roomName.$value }}</h4>
+                <h4>{{ roomName.$value }}</h4>
+        </div>
     </div>
 </section>

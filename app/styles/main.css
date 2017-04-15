@@ -20,13 +20,25 @@ body {
 
 .chat-rooms {
     position: absolute;
-    max-width: 25%; 
+    width: 20%;
     height: 100%;
     background-color: lightgray;
     color: black;
 }
 
 .chat-room-list {
-/*    padding-left: 10px;*/
+    padding-left: 10px;
     
+}
+
+.message-room {
+    position: relative;
+    width:80%;
+    float: right;
+    padding-left: 20px;
+}
+
+.rooms:hover {
+    cursor: pointer;
+/*    color: white;*/
 }

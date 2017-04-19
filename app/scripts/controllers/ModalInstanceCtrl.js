@@ -7,11 +7,6 @@
         this.cancel = function () {
             $uibModalInstance.dismiss('cancel');
         };
-        
-        this.createUsername = function () {
-            $cookies.put('blocChatCurrentUser', this.username);
-            $uibModalInstance.close();
-        };
     };
     
     angular

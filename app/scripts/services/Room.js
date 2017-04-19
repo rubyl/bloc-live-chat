@@ -9,7 +9,7 @@
         
         return {
             all: rooms,
-            createRoom: addChatRoom
+            createRoom: addChatRoom,
         };
     }
 

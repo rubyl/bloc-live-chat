@@ -38,6 +38,13 @@ body {
     padding-left: 20px;
 }
 
+.message-send {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+}
+
 .rooms:hover {
     cursor: pointer;
 /*    color: white;*/
